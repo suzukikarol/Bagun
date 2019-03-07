@@ -62,13 +62,12 @@ p.p1 {
 
 .input{
   width: 45%;
- float: left
+ 
 }
 
 .botao{
   width: 45%;
- float: left;
-  
+ 
 }
 
 .button{
@@ -78,6 +77,8 @@ p.p1 {
     border: 2px solid white;
     border-radius: 10px;
     padding: 14px 80px;
+    /* margin-left: 318px;
+    margin-top: -15px; */
     
 }
 
