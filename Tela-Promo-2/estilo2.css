@@ -1,9 +1,9 @@
 body {
-    padding: 25px;
+    padding: 79px;
 }
 
 p.p1 {
-  margin: 0;
+  margin: 1%;
   margin-top: 2px;
 }
 
@@ -21,21 +21,23 @@ p.p1 {
 }
 
 .principal{
-  margin: 25%;
-  margin-top: 10%;
+  margin: 33%;
+  margin-top: 13%;
 }
 
 .titulo{
     font-family: Ubuntu, sans-serif;
     color: #003260;
     font-size: 26px;
+    text-align: center;
 }
 
 .texto{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #7E939E;
-    
+    text-align: center;
+    margin-right: 1%;
 }
 
 .texto2{
@@ -49,6 +51,7 @@ p.p1 {
   font-size: 14px;
   color:#7E939E;
   position: relative;
+  margin-left: 3%;
 }
 
 .termos input:{
@@ -59,10 +62,6 @@ p.p1 {
   background-color: #268FCC;
 }
 
-.input{
-  width: 45%;
- 
-}
 
 .botao{
   width: 45%;
@@ -75,9 +74,9 @@ p.p1 {
     font-size: 14px;
     border: 2px solid white;
     border-radius: 10px;
-    padding: 14px 80px;
-    /* margin-left: 318px;
-    margin-top: -15px; */
+    padding: 16px 79px;
+    margin-left: 33%;
+    margin-top: 2%;
     
 }
 
@@ -85,6 +84,7 @@ p.p1 {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 1%;
 }
 
 .promo-methods:after {
@@ -96,23 +96,25 @@ p.p1 {
   border: 1px solid #ccc;
   box-sizing: border-box;
   float: left;
-  height: 60px;
+  height: 40px;
   position: relative;
-  width: 30%;
+  width: 27%;
   border-radius: 5px;
+  margin: -3%;
+  margin-left: 5%;
 }
 
 .promo-method label {
   background: no-repeat center center;
-  bottom: -1px;
+  bottom: 0px;
   cursor: pointer;
   display: block;
   font-size: 0;
-  left: -1px;
+  left: -2px;
   position: absolute;
-  right: -1px;
+  right: -2px;
   text-indent: 100%;
-  top: -1px;
+  top: 0px;
   white-space: nowrap;
   border-radius: 5px;
 
@@ -123,21 +125,22 @@ p.p1 {
 }
 
 .email label {
-  background: url('imagem/icon_newsletter.svg') no-repeat 10% 50%; 
+  background: url('icon_newsletter.svg') no-repeat 26% 43%; 
   background-size: 15%;
   text-decoration: #268FCC;
 
 }
 
 .sms label {
-    background: url('imagem/icon_message.svg') no-repeat 10% 50%;
+    background: url('icon_message.svg') no-repeat 26% 47%;
     background-size: 15%;
     text-decoration: #268FCC;
 }
 
 .watts label {
-    background: url('imagem/icon_whatsapp.svg') no-repeat 10% 50%;
+    background: url('icon_whatsapp.svg') no-repeat 15% 48%;
     background-size: 15%;
+    text-decoration: #268FCC;
 }
   
 .promo-methods input:focus + label {
@@ -146,7 +149,7 @@ p.p1 {
  }
   
 .promo-methods .email input:checked + label {
-  background: url('imagem/icon_newsletter_color.svg') no-repeat 10% 50%; 
+  background: url('icon_newsletter_color.svg') no-repeat 26% 43%; 
   background-size: 15%;
   border: 1px solid #268FCC;
   border-radius: 5px;
@@ -158,7 +161,7 @@ p.p1 {
 }
 
 .promo-methods .sms input:checked + label {
-  background: url('imagem/icon_message_color.svg') no-repeat 10% 50%; 
+  background: url('icon_message_color.svg') no-repeat 26% 47%; 
   background-size: 15%;
   border: 1px solid #268FCC;
   border-radius: 5px;
@@ -169,7 +172,7 @@ p.p1 {
 }
 
 .promo-methods .watts input:checked + label {
-  background: url('imagem/icon_whatsapp_color.svg') no-repeat 10% 50%; 
+  background: url('icon_whatsapp_color.svg') no-repeat 16% 45%; 
   background-size: 15%;
   border: 1px solid #268FCC;
   border-radius: 5px;
@@ -199,7 +202,7 @@ p.p1 {
 }
 
 .watts h5{
-  margin: 10% 10% 10% 45%;
+  margin: 10% 10% 10% 33%;
   color: darkgrey;
   font-family: Ubuntu, sans-serif;  
 }
@@ -211,23 +214,26 @@ p.p1 {
 .dotted{
   color: #D2DCDE;
   border-style: dotted;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 11%;
+  margin-bottom: 5%;
 }
 
 .mail-address{
   color:gray;
   height: 30px;
-  width:  300px;
-  border-bottom-color: #FFFFFF;
+  width:  115%;
+  border-color: 1px #D2DCDE;
+  margin-left: 6%;
+  margin-bottom: 7%;
 }
 
 .celular{
   color:gray;
   height: 30px;
-  width:  300px;
- border-bottom-color: #FFFFFF;
- border-color: 1px #D2DCDE ;
+  width:  115%;
+  border-color: 1px #D2DCDE ;
+  margin-left: 6%;
+  margin-bottom: 7%;
   
 }
 
@@ -237,7 +243,7 @@ p.p1 {
 
 .checkboxcontainer{
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 18%;
   position: relative;
   cursor: pointer;
   font-family: sans-serif;
@@ -254,7 +260,7 @@ p.p1 {
    width: 18px;
    background-color:#cccc;
    position: absolute;
-   left: 0%;
+   left: 9%;
    top: 0%;
    border-radius: 3px;
    margin-top: -1px;
@@ -282,7 +288,9 @@ p.p1 {
 }
 
 .termos2{
-  padding-top: 20px;
+  padding-top: 0%;
+  padding-bottom: 4%;
+padding-right: 12%;
 }
 
 .link1{
