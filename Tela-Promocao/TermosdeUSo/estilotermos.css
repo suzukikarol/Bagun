@@ -1,0 +1,48 @@
+.principal{
+    margin: 37%;
+    margin-top: 5%;
+  }
+
+  .titulo{
+    font-family: Ubuntu, sans-serif, Bold;
+    color: #003260;
+    font-size: 20px;
+}
+
+  .texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #7E939E;
+    
+}
+
+.topico{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #7E939E;
+}
+
+.subtopico{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #7E939E;
+}
+
+.subtopico.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #7E939E;
+}
+
+
+p.p1 {
+    margin: 0;
+    margin-top: 2px;
+    color: #7E939E;
+  }
+
+.button{
+    margin: 0;
+    margin-top: 2px;
+    color: #7E939E;
+}

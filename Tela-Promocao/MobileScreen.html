@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="estiloMobile.css" rel="stylesheet" type="text/css">
+    <!--<script type="text/javascript" src="function.js"></script>-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#link').click(function (event) {
+                event.preventDefault();
+            })
+            // $("#termos-de-uso").hide();
+            $('#id-pai').on("click touchstart", "#link", function (e) {
+                $("#conteudo-modal, #termos-de-uso").toggle();
+            });
+
+            $('#id-pai').on("click touchstart", "#link-voltar", function (e) {
+                $("#conteudo-modal, #termos-de-uso").toggle();
+            });
+
+            //um código mais limpo dessa mesma função seria o seguinte
+            // $("#link").click(function (event){  --- funçaõ disparado quando ocorre o clique no local que esta com essa div
+            //     event.preventDefault();    ---- isso faz com que ele não execute a função nativa dele e si a que colocarmos aqui!
+            //     $(".ngdialog-close").hide();  ---esconde tudo qo que esta na div com esta tag de id
+            //     $("#conteudo-modal").hide();
+            //     $("#termos-de-uso").show();   --- mostra tudo o que tem nesta tag com este id
+            // });
+
+            // $("#link-voltar").click(function(event){
+            //     event.preventDefault();
+            //     $(".ngdialog-close").show();
+            //     $("#conteudo-modal").show();
+            //     $("#termos-de-uso").hide();
+            // })
+
+        })
+
+    </script>
+</head>
+
+<body>
+    <!-- sempre tem que ter uma div pai e uma div abaixo do pai que também não seja a div da modal pra colocar essas funções-->
+    <div class="principal" id="id-pai"> 
+        <div id="conteudo-modal" style="display: block">
+            <h1 class="titulo">Você quer descontos exclusivos?</h1>
+            <hr class="hr">
+            <div class="texto">
+                <br />
+                <p class="p1">Neste mês teremos ofertas exclusivas para clientes cadastrados! Por onde podemos te
+                    avisar?
+                </p><br>
+            </div>
+
+            <div class="promo-methods">
+                <div class="promo-method email">
+                    <input name="promo_methods" type="radio" class="radio" id="email">
+                    <label for="email"></label>
+                    <h5>E-MAIL</h5>
+                </div>
+                <div class="promo-method sms">
+                    <input name="promo_methods" type="radio" class="radio" id="sms">
+                    <label for="sms"></label>
+                    <h5>SMS</h5>
+                </div>
+                <div class="promo-method watts">
+                    <input name="promo_methods" type="radio" class="radio" id="watts">
+                    <label for="watts"></label>
+                    <h5>WATSAPP</h5>
+                </div>
+                </ul>
+                <br />
+            </div>
+            <br />
+            <div class="texto2">
+                <br />
+                <p>
+                    <hr class="dotted">
+                    Confirme seus dados abaixo :
+                </p>
+            </div>
+            <div class="input">
+                <input type="text" name="txtEmail" placeholder="Digite o seu email" class="mail-address">
+                <input type="text" name="numCel" placeholder="Digite o seu telefone" class="celular">
+                <button class="button">CONFIRMAR</button>
+            </div>
+            <div class="termos2">
+                <label class="checkboxcontainer"><a class="termos">Li e aceito os</a> <a href="termosdeuso.html"
+                        class="link1" id="link">termos de
+                        uso</a>.
+
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <!--Não tem problema colocar a outra "tela" junto, basta usar outra div filho diferente da usada acima-->
+        <!-- neste caso alem da div foi usado tambem funções em JQuery para facilitar a visualização -->
+        <div id="termos-de-uso" style="display: none">
+            <h2 class="titulo" id="link-voltar">Voltar</h2>
+            <h1 class="titulo">Termos de uso</h1>
+            <hr class="hr">
+            <div class="texto">
+
+                <p class="titulo">1. Lorem Ipsum</p>
+                <p class="p1">1.1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor]
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <br>
+                <p>
+                    1.2 Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br />
+                <p>
+                    1.3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor]
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <br />
+                <p>
+                    Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+
+</html>
